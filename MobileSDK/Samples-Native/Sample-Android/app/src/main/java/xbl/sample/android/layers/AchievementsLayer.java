@@ -27,7 +27,6 @@ public class AchievementsLayer
     private Button m_buttonGetNextPage;
     private Button m_buttonGetAchievement;
     private Button m_buttonUpdateAchievement;
-    private Button m_buttonMainMenu;
 
     public AchievementsLayer(MainActivity activity)
     {
@@ -99,22 +98,6 @@ public class AchievementsLayer
             });
         }
 
-        // Create Menu Button
-        {
-            m_buttonMainMenu = new Button(m_activity);
-            m_buttonMainMenu.setText(R.string.button_mainMenu);
-            m_buttonMainMenu.setTextColor(Color.BLACK);
-            m_buttonMainMenu.setBackgroundResource(android.R.drawable.btn_default);
-            m_buttonMainMenu.setHeight(48);
-            m_buttonMainMenu.setOnClickListener(new View.OnClickListener()
-            {
-                public void onClick(View v)
-                {
-                    m_activity.menuView.changeLayer(MenuView.MVL_MAIN_MENU);
-                }
-            });
-        }
-
         InitializeNativeVars();
     }
 
@@ -124,7 +107,21 @@ public class AchievementsLayer
         layout.addView(m_buttonGetNextPage);
         layout.addView(m_buttonGetAchievement);
         layout.addView(m_buttonUpdateAchievement);
-        layout.addView(m_buttonMainMenu);
+
+        // Bind Menu Button
+        {
+            Button buttonMenuBack = m_activity.findViewById(R.id.button_MenuBack);
+            buttonMenuBack.setText(R.string.button_mainMenu);
+            buttonMenuBack.setOnClickListener(new View.OnClickListener()
+            {
+                public void onClick(View v)
+                {
+                    m_activity.menuView.changeLayer(MenuView.MVL_MAIN_MENU);
+                }
+            });
+
+            buttonMenuBack.setVisibility(View.VISIBLE);
+        }
     }
 
     private class SetHasNextPageRunnable implements Runnable

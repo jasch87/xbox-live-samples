@@ -24,12 +24,14 @@ list(APPEND SOURCE_FILES
         ${ANDROID_MOBILE_SDK_PATH}/Integration/Identity_Integration.cpp
         ${ANDROID_MOBILE_SDK_PATH}/Integration/Adv_Identity_Integration.cpp
         ${ANDROID_MOBILE_SDK_PATH}/Integration/Achievements_Integration.cpp
+        # ${ANDROID_MOBILE_SDK_PATH}/Integration/Social_Integration.cpp
         )
 
 # Add Gameplay Files
 list(APPEND SOURCE_FILES
         Gameplay/Identity_Gameplay.cpp
         Gameplay/Achievements_Gameplay.cpp
+        # Gameplay/Social_Gameplay.cpp
         )
 
 # Add JNI Support Files
@@ -39,6 +41,7 @@ list(APPEND SOURCE_FILES
         jni/MenuView_JNI.cpp
         jni/IdentityLayer_JNI.cpp
         jni/AchievementsLayer_JNI.cpp
+        jni/SocialLayer_JNI.cpp
         )
 
 # Make the Lib

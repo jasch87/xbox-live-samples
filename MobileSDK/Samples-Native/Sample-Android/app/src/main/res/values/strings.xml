@@ -10,4 +10,11 @@
     <string name="button_getNextPage">GET NEXT PAGE</string>
     <string name="button_getAchievement">GET ACHIEVEMENT</string>
     <string name="button_updateAchievement">UPDATE ACHIEVEMENT</string>
+    <string name="button_social">SOCIAL</string>
+    <string name="button_socialUsers">VIEW USERS</string>
+    <string name="button_socialUserID">VIEW USER %1$d</string>
+    <string name="button_socialGroups">DISPLAY GROUPS</string>
+    <string name="button_socialFriendsGroup">DISPLAY FRIENDS GROUP</string>
+    <string name="button_socialFavoritesGroup">DISPLAY FAVORITES GROUP</string>
+    <string name="button_socialMenu">SOCIAL MENU</string>
 </resources>
