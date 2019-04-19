@@ -22,8 +22,8 @@ public class SocialGroupsLayer
 
     private MainActivity m_activity;
 
-    private Button m_buttonUser;
-    private Button m_buttonGroup;
+    private Button m_buttonUsers;
+    private Button m_buttonGroups;
 
     public SocialGroupsLayer(MainActivity activity)
     {
@@ -33,12 +33,12 @@ public class SocialGroupsLayer
 
         // Create User Button
         {
-            m_buttonUser = new Button(m_activity);
-            m_buttonUser.setText(R.string.button_socialUsers);
-            m_buttonUser.setTextColor(Color.BLACK);
-            m_buttonUser.setBackgroundResource(android.R.drawable.btn_default);
-            m_buttonUser.setHeight(48);
-            m_buttonUser.setOnClickListener(new View.OnClickListener()
+            m_buttonUsers = new Button(m_activity);
+            m_buttonUsers.setText(R.string.button_socialFriendsGroup);
+            m_buttonUsers.setTextColor(Color.BLACK);
+            m_buttonUsers.setBackgroundResource(android.R.drawable.btn_default);
+            m_buttonUsers.setHeight(48);
+            m_buttonUsers.setOnClickListener(new View.OnClickListener()
             {
                 public void onClick(View v)
                 {
@@ -49,12 +49,12 @@ public class SocialGroupsLayer
 
         // Create Group Button
         {
-            m_buttonGroup = new Button(m_activity);
-            m_buttonGroup.setText(R.string.button_socialGroups);
-            m_buttonGroup.setTextColor(Color.BLACK);
-            m_buttonGroup.setBackgroundResource(android.R.drawable.btn_default);
-            m_buttonGroup.setHeight(48);
-            m_buttonGroup.setOnClickListener(new View.OnClickListener()
+            m_buttonGroups = new Button(m_activity);
+            m_buttonGroups.setText(R.string.button_socialFavoritesGroup);
+            m_buttonGroups.setTextColor(Color.BLACK);
+            m_buttonGroups.setBackgroundResource(android.R.drawable.btn_default);
+            m_buttonGroups.setHeight(48);
+            m_buttonGroups.setOnClickListener(new View.OnClickListener()
             {
                 public void onClick(View v)
                 {
@@ -68,8 +68,8 @@ public class SocialGroupsLayer
 
     public void show(LinearLayout layout)
     {
-        layout.addView(m_buttonUser);
-        layout.addView(m_buttonGroup);
+        layout.addView(m_buttonUsers);
+        layout.addView(m_buttonGroups);
 
         // Bind Menu Button
         {
@@ -79,7 +79,7 @@ public class SocialGroupsLayer
             {
                 public void onClick(View v)
                 {
-                    m_activity.menuView.changeLayer(MenuView.MVL_MAIN_MENU);
+                    m_activity.menuView.changeLayer(MenuView.MVL_SOCIAL);
                 }
             });
 

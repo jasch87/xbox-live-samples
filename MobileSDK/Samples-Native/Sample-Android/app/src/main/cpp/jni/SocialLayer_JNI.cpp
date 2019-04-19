@@ -18,4 +18,32 @@ extern "C"
     {
         g_socialLayerInstance = env->NewGlobalRef(instance);
     }
+
+    JNIEXPORT void JNICALL Java_xbl_sample_android_layers_SocialUsersLayer_InitializeNativeVars(
+            JNIEnv* env,
+            jobject instance)
+    {
+
+    }
+
+    JNIEXPORT void JNICALL Java_xbl_sample_android_layers_SocialGroupsLayer_InitializeNativeVars(
+            JNIEnv* env,
+            jobject instance)
+    {
+
+    }
+
+    JNIEXPORT void JNICALL Java_xbl_sample_android_layers_SocialProfileViewLayer_InitializeNativeVars(
+            JNIEnv* env,
+            jobject instance)
+    {
+
+    }
+
+    JNIEXPORT void JNICALL Java_xbl_sample_android_layers_SocialGroupViewLayer_InitializeNativeVars(
+            JNIEnv* env,
+            jobject instance)
+    {
+
+    }
 }

@@ -17,4 +17,6 @@
     <string name="button_socialFriendsGroup">DISPLAY FRIENDS GROUP</string>
     <string name="button_socialFavoritesGroup">DISPLAY FAVORITES GROUP</string>
     <string name="button_socialMenu">SOCIAL MENU</string>
+    <string name="button_socialUsersMenu">USERS MENU</string>
+    <string name="button_socialGroupsMenu">GROUPS MENU</string>
 </resources>
