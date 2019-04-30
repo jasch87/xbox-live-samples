@@ -19,4 +19,6 @@
     <string name="button_socialMenu">SOCIAL MENU</string>
     <string name="button_socialUsersMenu">USERS MENU</string>
     <string name="button_socialGroupsMenu">GROUPS MENU</string>
+    <string name="title_relationshipStatus">Relationship:</string>
+    <string name="title_onlineStatus">Status:</string>
 </resources>

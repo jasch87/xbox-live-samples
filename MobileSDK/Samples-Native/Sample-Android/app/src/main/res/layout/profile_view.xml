@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gamerProfile"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:background="@color/generic_page_background"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/gamerIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gamerPic"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_user_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_xboxlive_round" />
+
+        <TextView
+            android:id="@+id/gamerTag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="@+id/gamerPic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gamerPic"
+            app:layout_constraintTop_toTopOf="@+id/gamerPic" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/gamerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/gamerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/gamerScoreTitle"
+            app:layout_constraintStart_toStartOf="@+id/gamerScoreTitle"
+            app:layout_constraintTop_toBottomOf="@+id/gamerScoreTitle" />
+
+        <TextView
+            android:id="@+id/gamerScoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title_gamerScore"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/relationshipTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/relationshipTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title_relationshipStatus"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/relationshipStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/relationshipTitle"
+            app:layout_constraintStart_toStartOf="@+id/relationshipTitle"
+            app:layout_constraintTop_toBottomOf="@+id/relationshipTitle" />
+
+        <TextView
+            android:id="@+id/onlineStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/onlineStatusTitle"
+            app:layout_constraintStart_toStartOf="@+id/onlineStatusTitle"
+            app:layout_constraintTop_toBottomOf="@+id/onlineStatusTitle" />
+
+        <TextView
+            android:id="@+id/onlineStatusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title_onlineStatus"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relationshipTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

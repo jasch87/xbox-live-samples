@@ -135,7 +135,14 @@ public class IdentityLayer
 
         protected void onPostExecute(Bitmap result)
         {
-            m_imageView.setImageBitmap(result);
+            if (result != null)
+            {
+                m_imageView.setImageBitmap(result);
+            }
+            else
+            {
+                m_imageView.setImageResource(R.mipmap.ic_xboxlive_round);
+            }
         }
     }
 
