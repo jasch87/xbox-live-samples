@@ -220,7 +220,6 @@ public class IdentityLayer
         m_activity.runOnUiThread(runnable);
     }
 
-
     private class SetGamerTagRunnable implements Runnable
     {
         private String m_string;
