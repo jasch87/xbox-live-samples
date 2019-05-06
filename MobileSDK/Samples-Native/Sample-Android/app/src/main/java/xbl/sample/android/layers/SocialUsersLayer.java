@@ -21,7 +21,7 @@ public class SocialUsersLayer
 
     private MainActivity m_activity;
 
-    private Button m_buttonUser[];
+    private Button[] m_buttonUser;
 
     public SocialUsersLayer(MainActivity activity)
     {

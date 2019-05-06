@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity
 {
-    private static final String TAG = "AndroidSample";
+    private static final String TAG = "Android Sample";
 
     // Used to load the 'native-lib' library on application startup.
     static { System.loadLibrary("native-lib"); }
