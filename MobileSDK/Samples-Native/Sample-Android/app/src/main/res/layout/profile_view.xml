@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gamerProfileCard"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:background="@color/generic_page_background">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/pc_gamerIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pc_gamerPic"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_user_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_xboxlive_round" />
+
+        <TextView
+            android:id="@+id/pc_gamerTag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="@+id/pc_gamerPic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pc_gamerPic"
+            app:layout_constraintTop_toTopOf="@+id/pc_gamerPic" />
+
+        <TextView
+            android:id="@+id/pc_relationshipTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title_relationshipStatus"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pc_gamerPic" />
+
+        <TextView
+            android:id="@+id/pc_gamerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/pc_gamerScoreTitle"
+            app:layout_constraintStart_toStartOf="@+id/pc_gamerScoreTitle"
+            app:layout_constraintTop_toBottomOf="@+id/pc_gamerScoreTitle" />
+
+        <TextView
+            android:id="@+id/pc_gamerScoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title_gamerScore"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/pc_relationshipTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pc_gamerPic" />
+
+        <TextView
+            android:id="@+id/pc_onlineStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/pc_onlineStatusTitle"
+            app:layout_constraintStart_toStartOf="@+id/pc_onlineStatusTitle"
+            app:layout_constraintTop_toBottomOf="@+id/pc_onlineStatusTitle" />
+
+        <TextView
+            android:id="@+id/pc_onlineStatusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title_onlineStatus"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pc_relationshipTitle"
+            app:layout_constraintTop_toTopOf="@+id/pc_relationshipTitle" />
+
+        <TextView
+            android:id="@+id/pc_relationshipStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_page_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/pc_relationshipTitle"
+            app:layout_constraintStart_toStartOf="@+id/pc_relationshipTitle"
+            app:layout_constraintTop_toBottomOf="@+id/pc_relationshipTitle" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

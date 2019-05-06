@@ -135,7 +135,14 @@ public class IdentityLayer
 
         protected void onPostExecute(Bitmap result)
         {
-            m_imageView.setImageBitmap(result);
+            if (result != null)
+            {
+                m_imageView.setImageBitmap(result);
+            }
+            else
+            {
+                m_imageView.setImageResource(R.mipmap.ic_xboxlive_round);
+            }
         }
     }
 
@@ -212,7 +219,6 @@ public class IdentityLayer
         ClearGamerScoreRunnable runnable = new ClearGamerScoreRunnable();
         m_activity.runOnUiThread(runnable);
     }
-
 
     private class SetGamerTagRunnable implements Runnable
     {
