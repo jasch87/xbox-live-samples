@@ -66,6 +66,11 @@ public class SocialGroupsLayer
         InitializeNativeVars();
     }
 
+    public void Update(double dt)
+    {
+
+    }
+
     public void show(LinearLayout layout)
     {
         layout.addView(m_buttonUsers);

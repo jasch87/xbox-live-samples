@@ -50,6 +50,11 @@ public class SocialUsersLayer
         InitializeNativeVars();
     }
 
+    public void Update(double dt)
+    {
+
+    }
+
     public void show(LinearLayout layout)
     {
         for (int i = 0; i < 10; ++i)

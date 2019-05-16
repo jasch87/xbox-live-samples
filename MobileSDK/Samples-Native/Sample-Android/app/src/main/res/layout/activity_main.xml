@@ -157,4 +157,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gamerScoreTitle" />
 
+    <TextView
+        android:id="@+id/text_FPS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_FPS"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

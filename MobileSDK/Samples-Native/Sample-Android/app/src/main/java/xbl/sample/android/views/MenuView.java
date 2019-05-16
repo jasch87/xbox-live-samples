@@ -35,6 +35,8 @@ public class MenuView
     private LinearLayout m_layout;
     private Button m_buttonMenuBack;
 
+    private int m_currentLayer;
+
     public MenuView(MainActivity activity)
     {
         m_activity = activity;
@@ -50,6 +52,35 @@ public class MenuView
         resetView();
 
         InitializeNativeVars();
+    }
+
+    public void Update(double dt)
+    {
+        switch(m_currentLayer)
+        {
+            case MVL_SOCIAL_GROUP_VIEW:
+            {
+                socialLayer.m_groupsLayer.m_groupViewLayer.Update(dt);
+            }break;
+            case MVL_SOCIAL_GROUPS:
+            {
+                socialLayer.m_groupsLayer.Update(dt);
+            }break;
+            case MVL_SOCIAL_USER_PROFILE:
+            {
+                socialLayer.m_usersLayer.m_profileViewLayer.Update(dt);
+            }break;
+            case MVL_SOCIAL_USERS:
+            {
+                socialLayer.m_usersLayer.Update(dt);
+            }break;
+            case MVL_SOCIAL:
+            {
+                socialLayer.Update(dt);
+            }break;
+            default:
+                break;
+        }
     }
 
     private void resetView()
@@ -74,6 +105,8 @@ public class MenuView
         public void run()
         {
             resetView();
+
+            m_currentLayer = m_layer;
 
             switch(m_layer)
             {

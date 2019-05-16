@@ -46,6 +46,11 @@ public class SocialProfileViewLayer
         InitializeNativeVars();
     }
 
+    public void Update(double dt)
+    {
+
+    }
+
     public void show(LinearLayout layout)
     {
         // Bind Menu Button
